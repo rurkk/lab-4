@@ -1,6 +1,6 @@
 package controllers;
 
-import dto.CatDto;
+import dto.CatDto; 
 import dto.OwnerDto;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,7 +53,7 @@ public class OwnerControllerRepo implements IOwnerController{
 
     @Override
     @DeleteMapping("{id}")
-    public void removeOwner(@PathVariable("id") int id) {
+    public void removeOwner(@PathVariable("id")   int id) {
         serviceRepository.removeOwner(id);
     }
 }
